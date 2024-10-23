@@ -90,6 +90,11 @@ button:hover {
                 flex-direction: column;
                 gap: 2rem;
 
+                p {
+                    color: #555555;
+                    line-height: 1.5rem;
+                }
+
                 #hero-buttons {
                     display: flex;
                     gap: 5px;
@@ -133,7 +138,7 @@ button:hover {
     align-items: center;
 
     #presentation {
-        max-width: 800px;
+        max-width: 900px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -152,7 +157,8 @@ button:hover {
             color: var(--darker-blue);
         }
         p {
-            color: var(--grey)
+            color: var(--grey);
+            line-height: 1.8rem;
         }
 
         button {
@@ -229,7 +235,7 @@ button:hover {
 
             p {
                 color: var(--grey);
-                line-height: 1.5rem;
+                line-height: 1.8rem;
             }
         }
 
