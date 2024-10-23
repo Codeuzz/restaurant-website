@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rufina:wght@400;700&display=swap");
+:root {
+  --green: #11682c;
+  --grey: #888888;
+  --dark-blue: #263a41;
+  --darker-blue: #1e2528;
+}
+
+body, html {
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  padding-bottom: 20vh;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#welcome {
+  display: flex;
+  justify-content: space-between;
+}
+#welcome #header-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  width: 100%;
+}
+#welcome #header-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#welcome #header-container #hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding-left: 2.5rem;
+  box-sizing: border-box;
+  max-width: 500px;
+}
+#welcome #header-container #hero-container #hero-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Rufina";
+}
+#welcome #header-container #hero-container #hero-title h4 {
+  color: var(--green);
+}
+#welcome #header-container #hero-container #hero-title h1 {
+  font-size: 4rem;
+  color: var(--darker-blue);
+}
+#welcome #header-container #hero-container #hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#welcome #header-container #hero-container #hero-text #hero-buttons {
+  display: flex;
+  gap: 5px;
+}
+#welcome #header-container #hero-container #hero-text #hero-buttons button {
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 170px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+}
+#welcome #header-container #hero-container #hero-text #hero-buttons #book-table {
+  background-color: var(--green);
+  color: white;
+  text-transform: uppercase;
+}
+#welcome #banner {
+  max-width: 100%;
+  width: 45%;
+}
+
+#specialties {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#specialties #presentation {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+#specialties #presentation h3 {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+#specialties #presentation h2 {
+  font-size: 3rem;
+  font-family: "Rufina";
+  color: var(--darker-blue);
+}
+#specialties #presentation p {
+  color: var(--grey);
+}
+#specialties #presentation button {
+  background-color: var(--green);
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+#specialties #image-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#specialties #image-row figure {
+  width: 25%;
+  margin: 0;
+  position: relative;
+}
+#specialties #image-row figure .img-row {
+  width: 100%;
+  height: 320px;
+}
+#specialties #image-row figure figcaption {
+  position: absolute;
+  background: rgba(17, 104, 45, 0.7176470588);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#specialties #image-row figure figcaption:hover {
+  opacity: 1;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#menu #popular-plates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#menu #popular-plates #menu-text {
+  max-width: 800px;
+}
+#menu #popular-plates #menu-text h2 {
+  font-family: "Rufina", sans-serif;
+  font-size: 3rem;
+  color: var(--dark-blue);
+}
+#menu #popular-plates #menu-text p {
+  color: var(--grey);
+  line-height: 1.5rem;
+}
+#menu #popular-plates #menu-images {
+  width: 100%;
+  display: flex;
+  gap: 2.5rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+#menu #popular-plates #menu-images figure {
+  border: 2px solid #e4e4e4;
+  box-sizing: border-box;
+  padding: 10px 10px 30px 10px;
+  transition: box-shadow 400ms;
+  width: 100%;
+  margin: 0;
+}
+#menu #popular-plates #menu-images figure:hover {
+  box-shadow: 2px 8px 13px rgb(182, 182, 182);
+}
+#menu #popular-plates #menu-images figure img {
+  width: 100%;
+  height: 340px;
+}
+#menu #popular-plates #menu-images figure figcaption {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--grey);
+  line-height: 1.5rem;
+}
+#menu #popular-plates #menu-images figure figcaption h3 {
+  font-family: "Rufina", sans-serif;
+  font-size: 2rem;
+  color: var(--dark-blue);
+}
+#menu #popular-plates #menu-images figure figcaption button {
+  background-color: var(--dark-blue);
+  border: none;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+#menu #popular-plates #menu-images figure figcaption button:hover {
+  background-color: var(--green);
+}
+#menu #quote-div {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+#menu #quote-div blockquote {
+  color: var(--dark-blue);
+  font-family: "Rufina", sans-serif;
+  line-height: 1.5rem;
+}
+#menu #quote-div strong {
+  font-family: "Rufina", sans-serif;
+  color: var(--dark-blue);
+  font-size: 1.3rem;
+}
+#menu #quote-div #jacky-daniels {
+  border-radius: 50%;
+}
+
+#they-speak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+#they-speak #infos {
+  max-width: 900px;
+}
+#they-speak #infos h2 {
+  font-size: 3rem;
+  font-family: "Rufina";
+  color: var(--darker-blue);
+  margin-bottom: 1.5rem;
+}
+#they-speak #infos p {
+  color: var(--grey);
+  line-height: 1.5rem;
+}
+#they-speak #magazines {
+  display: flex;
+  gap: 2.5rem;
+}
+#they-speak #magazines figure {
+  margin: 0;
+  position: relative;
+}
+#they-speak #magazines figure:hover figcaption {
+  box-shadow: 2px 2px 8px var(--grey);
+  bottom: 0.3rem;
+  transition: bottom 500ms;
+}
+#they-speak #magazines figure > img {
+  height: 370px;
+}
+#they-speak #magazines figure figcaption {
+  background-color: white;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 0;
+  box-shadow: 1px 1px 2px var(--grey);
+  color: var(--grey);
+}
+#they-speak #magazines figure figcaption h3 {
+  color: var(--dark-blue);
+  font-family: "Rufina", sans-serif;
+  font-weight: 600;
+}
+#they-speak #magazines figure#with-socials figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#they-speak #magazines figure#with-socials figcaption img {
+  margin-top: 1rem;
+}
+
+#reservation {
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+}
+#reservation img {
+  max-width: 600px;
+}
+#reservation form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#reservation form fieldset {
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  border: none;
+  align-items: center;
+}
+#reservation form fieldset .input-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  height: 300px;
+  width: 230px;
+  box-sizing: border-box;
+}
+#reservation form fieldset label {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: #b6b6b6;
+  width: 100%;
+}
+#reservation form fieldset input, #reservation form fieldset select {
+  height: 1rem;
+  border: none;
+  border-bottom: 1.5px solid #d1d1d1;
+  max-width: 100%;
+  margin: 0;
+  width: 100%;
+}
+#reservation form fieldset select {
+  width: 255px;
+}
+#reservation form label {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  color: #b6b6b6;
+}
+#reservation form label textarea {
+  height: 1rem;
+  margin: 0;
+  border: none;
+  border-bottom: 1.5px solid #d1d1d1;
+  resize: none;
+  width: calc(460px + 2rem);
+  max-width: 800px;
+}
+#reservation form button {
+  margin-top: 2.5rem;
+  justify-self: start;
+  background-color: var(--green);
+  border: none;
+  width: 170px;
+  height: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  padding: 5vh 0;
+}
+footer a {
+  color: var(--dark-blue);
+}/*# sourceMappingURL=styles.css.map */
